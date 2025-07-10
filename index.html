@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Your Carbon Footprint Today</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Your Carbon Footprint Today</h1>
+    <form id="footprintForm" aria-label="Carbon footprint input form">
+      <fieldset id="transportFieldset">
+        <legend>Transport (kilometers)</legend>
+        <div id="transportEntries"></div>
+        <button type="button" class="add-btn" id="addTransportBtn">
+          + Add Transport
+        </button>
+      </fieldset>
+
+      <fieldset id="foodFieldset">
+        <legend>Food (number of meals)</legend>
+        <div id="foodEntries"></div>
+        <button type="button" class="add-btn" id="addFoodBtn">
+          + Add Food Entry
+        </button>
+      </fieldset>
+
+      <fieldset id="energyFieldset">
+        <legend>Energy Usage (hours)</legend>
+        <div id="energyEntries"></div>
+        <button type="button" class="add-btn" id="addEnergyBtn">
+          + Add Energy Usage
+        </button>
+      </fieldset>
+
+      <button type="submit" class="submit-btn">Calculate My Footprint</button>
+    </form>
+
+    <section id="result" aria-live="polite"></section>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
